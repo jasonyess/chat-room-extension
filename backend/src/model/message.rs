@@ -29,7 +29,7 @@ impl Message {
         for user in users.iter() {
             let user_messages: Vec<Message> = sqlx::query_as!(
                 SQLMessage,
-                "SELECT * FROM messages WHERE user_id = $1 LIMIT 15",
+                "SELECT * FROM messages WHERE user_id = $1",
                 user.user_id
             )
             .fetch_all(&**pool)
