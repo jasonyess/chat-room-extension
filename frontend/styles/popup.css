@@ -1,0 +1,16 @@
+button {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.scroll-view {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 180px;
+    overflow-y: auto;
+}
+
+.message > p {
+    margin-top: -2px;
+    overflow-wrap: break-word;
+}

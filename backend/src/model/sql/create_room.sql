@@ -1,0 +1,1 @@
+INSERT INTO rooms (room_id) VALUES ($1) RETURNING room_id;

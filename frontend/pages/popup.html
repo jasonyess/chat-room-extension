@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Chat Room</title>
+        <link rel="stylesheet" href="../styles/popup.css">
+    </head>
+
+    <body>
+        <div id="home-page">
+            <input type="text" id="user-input" autocomplete="off" placeholder="Username" />
+            <input type="text" id="join-room-input" autocomplete="off" placeholder="Room ID" />
+            <button type="submit" id="join-submit">Join Existing Room</button>
+            <p id="join-notice"></p>
+
+            <hr>
+
+            <input type="text" id="create-input" autocomplete="off" placeholder="Room ID" />
+            <button type="submit" id="create-submit">Create Room</button>
+            <p id="create-notice"></p>
+        </div>
+
+        <div id="chat-page">
+            <div class="scroll-view" id="messages-list">
+                <div class="message" id="message-template">
+                    <b></b>
+                    <p></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <input type="text" id="message-input" autocomplete="off" placeholder="Message" />
+            <button id="leave-room">Leave Room</button>
+        </div>
+
+        <script type="module" src="../scripts/popup.js"></script>
+        <script type="module" src="../scripts/config.js"></script>
+    </body>
+</html>
